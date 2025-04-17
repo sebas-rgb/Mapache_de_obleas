@@ -10,14 +10,14 @@ document.getElementById("registroForm").addEventListener("submit", async (e) => 
     const data = {
         nombre_usuario,
         email,
-        contraseña: password, // ✅ corregido
+        contraseña: password,
         tipo_usuario,
         num_celular,
     };
 
     try {
         const response = await fetch("http://localhost:3000/users", {
-            method: "POST", // ✅ correcto
+            method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
