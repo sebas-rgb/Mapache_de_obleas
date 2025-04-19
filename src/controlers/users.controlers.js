@@ -68,4 +68,26 @@ export const updateuser =   async(req, res) => {
     );
     return res.json(rows[0]);
 }
+export const loginUser = async (req, res) => {
+    const { email, contraseña } = req.body;
+
+    try {
+        const { rows } = await pool.query(
+            "SELECT * FROM usuarios WHERE email = $1 AND contraseña = $2",
+            [email, contraseña]
+        );
+
+        if (rows.length === 0) {
+            return res.status(401).json({ message: "Correo o contraseña incorrectos" });
+        }
+
+        // Aquí podrías generar un token si usas JWT, por ahora solo devuelve el usuario
+        res.json({ message: "Inicio de sesión exitoso", usuario: rows[0] });
+
+    } catch (error) {
+        console.error("Error al hacer login:", error);
+        res.status(500).json({ message: "Error del servidor" });
+    }
+};
+
   

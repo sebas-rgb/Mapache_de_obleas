@@ -27,6 +27,7 @@ document.getElementById("registroForm").addEventListener("submit", async (e) => 
         if (response.ok) {
             alert("Usuario registrado exitosamente");
             document.getElementById("registroForm").reset();
+            window.location.href = "index.html"; 
         } else {
             const error = await response.json();
             alert(`Error: ${error.message}`);
