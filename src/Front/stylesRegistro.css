@@ -1,0 +1,78 @@
+/* Fondo y fuente */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fef3f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+.registro-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Título superior */
+.registro-title {
+    color: #84433b;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+/* Etiquetas */
+label {
+    align-self: flex-start;
+    color: #5a4c4c;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* Campos de entrada y select */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #f3d0d4;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #fff6f8;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #d98287;
+    outline: none;
+}
+
+/* Botón */
+button[type="submit"] {
+    background-color: #a1504b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #843f3a;
+}

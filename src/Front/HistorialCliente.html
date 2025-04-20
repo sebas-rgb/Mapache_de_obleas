@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>ERP - Historial Ordenes</title>
+        <link rel="stylesheet" href="styleHistorialPedidos.css"> 
+        <link rel="stylesheet" href="styleHeader.css"><!-- Tu archivo de estilos personalizado -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <!-- Cabecera superior con enlaces informativos y sociales -->
+        <header class="top-header">
+            <div class="top-links">
+                <a href="#">Preguntas Frecuentes</a>
+                <span>|</span>
+                <a href="#">Ayuda</a>
+                <span>|</span>
+                <a href="#">Soporte</a>
+            </div>
+        </header>
+
+        <!-- Sección del logo -->
+        <div class="titulo-section">
+            <div class="logo">
+                <h1>LACTI-<span>ERP</span></h1>
+            </div>
+        </div>
+
+        <!-- Menú de navegación -->
+        <nav class="main-nav">
+            <a href="SobreNosotros.html">Sobre Nosotros</a>
+            <a href="MenuCliente.html">Tienda</a>
+            <div class="auth-links">
+                <a href="Carrito.html">
+                    <img src="Imagenes/carrito-de-compras.png" alt="Carrito de compras" width="24" height="24">
+                </a>
+                <a href="HistorialCliente.html">Historial Ordenes</a>
+                <a href="index.html">Salir</a>
+            </div>
+        </nav>
+        
+        <!-- Contenido del historial de ordenes -->
+        <section class="historial-section">
+            <br>
+            <h2 class="section-title">Historial de Ordenes</h2>
+            <div class="historial-container">
+                <table class="tabla-historial" id="tabla-historial">
+                    <thead>
+                        <tr>
+                            <th>ID de Orden</th>
+                            <th>Nombre del Producto</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historial-items">
+                        <!-- Aquí se insertarán dinámicamente las filas con JavaScript -->
+                        <tr>
+                            <td colspan="3" class="tabla-vacia" id="historial-empty">No hay órdenes realizadas</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    </body>
+</html>

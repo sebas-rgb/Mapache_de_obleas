@@ -20,7 +20,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
 
         if (response.ok) {
             alert("Inicio de sesión exitoso");
-            window.location.href = "http://localhost:3000/Front/index.html";
+            window.location.href = "http://localhost:3000/Front/MenuCliente.html";
         } else {
             const error = await response.json();
             alert(`Error: ${error.message}`);

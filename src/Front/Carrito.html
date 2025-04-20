@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ERP - Carrito de compras</title>
+    <link rel="stylesheet" href="styleCarrito.css"> 
+    <link rel="stylesheet" href="styleHeader.css"><!-- Tu archivo de estilos personalizado -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Cabecera superior con enlaces informativos y sociales -->
+    <header class="top-header">
+        <div class="top-links">
+            <a href="#">Preguntas Frecuentes</a>
+            <span>|</span>
+            <a href="#">Ayuda</a>
+            <span>|</span>
+            <a href="#">Soporte</a>
+        </div>
+    </header>
+
+    <!-- Sección del logo -->
+    <div class="titulo-section">
+        <div class="logo">
+            <h1>LACTI-<span>ERP</span></h1>
+        </div>
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav class="main-nav">
+        <a href="SobreNosotros.html">Sobre Nosotros</a>
+        <a href="MenuCliente.html">Tienda</a>
+        <div class="auth-links">
+            <a href="Carrito.html">
+                <img src="Imagenes/carrito-de-compras.png" alt="Carrito de compras" width="24" height="24">
+            </a>
+            <a href="HistorialCliente.html">Historial Ordenes</a>
+            <a href="index.html">Salir</a>
+        </div>
+    </nav>
+
+    <!-- Contenido del carrito de compras -->
+    <section class="cart-section">
+        <br>
+        <h2 class="section-title">Carrito de compras</h2>
+        <div class="cart-container">
+            <div class="cart-empty" id="cart-empty">
+                <p>Agrega un producto</p>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Los productos saldran aca con el id, nombre y precio traidos de la base de datos -->
+            </div>
+            <div class="cart-summary">
+                <h3>Resumen de compra</h3>
+                <div class="summary-details">
+                    <p>Producto/s: <span id="total-items">0</span></p>
+                    <p>Envío: <span id="shipping-cost">$0.00</span></p>
+                    <p>Total: <span id="total-price">$0.00</span></p>
+                </div>
+                
+            </div>
+        </div>        
+    </section>
+    <button class="btn" id="checkout-button">Comprar</button>
+</body>
+
+</html>

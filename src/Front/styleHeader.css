@@ -1,0 +1,99 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bona Nova', sans-serif;
+    background: #fef3f6;
+    color: #000000;
+    font-weight: normal;
+}
+
+/* Cabecera Superior */
+.top-header {
+    background: linear-gradient(45deg, #6a4040, #290505);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top-header .top-links {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.top-header .top-links a {
+    margin: 0 5px;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Bona Nova', serif;
+}
+
+.top-header .top-links span {
+    margin: 0px;
+    color: #e0e0e0;
+}
+
+.top-header .social-links {
+    display: flex;
+    align-items: center;
+}
+
+.top-header .social-links a {
+    margin: 0 5px;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Titulo ERP */
+.titulo-section {
+    padding: 25px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: #84433b;
+}
+
+/* Menu de Navegación */
+.main-nav {
+    background: #5e0c06;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-family: 'Bona Nova', serif;
+    position: relative;
+    z-index: 1000;
+}
+
+.main-nav a {
+    margin: 0 15px;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: #bebebe;
+}
+
+.main-nav .auth-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.main-nav .auth-links a {
+    margin-left: 15px;
+    font-size: 0.95rem;
+    color: #ffffff;
+}

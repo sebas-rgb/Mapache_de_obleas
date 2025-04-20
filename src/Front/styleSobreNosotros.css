@@ -1,0 +1,33 @@
+.sobre-nosotros {
+    background-color: #fff0f3;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-nosotros {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.logo-nosotros {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.sobre-nosotros h2 {
+    font-size: 28px;
+    color: #a1504b;
+    margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+    font-size: 16px;
+    color: #5a4c4c;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
